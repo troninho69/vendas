@@ -1,8 +1,11 @@
 import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
+import "./Home.css"
 
 import Categories from "../../components/Categories";
 import Card from "../../components/Card";
+
+import { getProducts } from "../../services/productService";
 
 export default function Page() {
   const [selectedBtn, setSelectedBtn] = useState("");
